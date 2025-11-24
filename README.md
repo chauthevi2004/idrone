@@ -72,3 +72,9 @@ Use `kaggle.ipynb` or `colab.ipynb` when you need hosted GPUs. The links in `not
 - If SAM occasionally misses the drone, decrease the skip stride and loosen `max_bbox_*` ratios, at the cost of more false positives.  
 - Monitor VRAM usage when batching crops; `batch_embed` already handles empty lists, so you can safely adjust the frame sampling window if memory gets tight.
 
+## Demo
+
+![Drone tracking preview](drone-test.gif)
+
+The animation above is rendered directly from the JSON output produced by `trainv1.py`. Each frame shows the MobileSAM mask proposal overlaid with the ByteTrack-stabilized bounding box that survives the cosine-similarity filter against the DINOv2 template. Notice how the box stays locked on the drone even when the per-frame detector briefly drops, thanks to the interpolation and tracker smoothing logic described earlier.
+
