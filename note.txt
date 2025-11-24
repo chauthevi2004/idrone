@@ -1,0 +1,2 @@
+Kaggle: https://www.kaggle.com/code/vchuth/drone-test-zac
+Colab: https://colab.research.google.com/drive/13vwOob6JbvU_STFYEcMYNRPWs5HOAD21?usp=sharing
