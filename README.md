@@ -16,7 +16,6 @@ This folder bundles everything needed to reproduce the object-tracking pipeline 
 Clone the upstream repositories into this folder so that `trainv1.py` can reuse their encoders or training utilities:
 
 ```bash
-cd /datastore/inseclab/phong/idrone
 git clone https://github.com/apple/ml-mobileclip.git ml-mobileclip
 git clone https://github.com/mlfoundations/open_clip.git open_clip
 ```
